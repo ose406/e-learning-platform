@@ -12,8 +12,8 @@ if(!isset($_SESSION['email'])){
          ?>
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
    
-    <button class="navbar-toggler text-white fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon fs-1">Menu</span>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">Menu</span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -31,15 +31,17 @@ if(!isset($_SESSION['email'])){
             Options
           </a>
           <ul class="dropdown-menu">
-<li><a href="profile.php" class="nav-link">Home</a></li>
-              <li><a href="profile.php?url=variables">Variables</a></li>
-<li><a href="profile.php?url=ifstatements" class="nav-link">If Statement</a></li>
-<li><a href="profile.php?url=loops" class="nav-link">Loops</a>
-  </li>
-<li><a href="profile.php?url=send_review" class="nav-link"> Send Review</a></li>
-<li><a href="practice.php">Practice What You Have Learnt With JS</a></li>
-<li><a href="profile.php?url=feedback" class="nav-link">Feed Back</a></li>
-<li><a href="logout.php?url=logout"class="nav-link">Logout</a></li>
+<li>
+  <a href="dashboard.php" class="nav-link">Home</a>
+</li>
+              <li><a href="dashboard.php?url=users" class="nav-link">Users</a></li>
+<!-- <li><a href="profile.php?url=ifstatements" class="nav-link">If Statement</a></li> -->
+<!-- <li><a href="profile.php?url=loops" class="nav-link">Loops</a> -->
+  <!-- </li> -->
+<li><a href="dashboard.php?url=review" class="nav-link">Review</a></li>
+<!-- <li><a href="practice.php">Practice What You Have Learnt With JS</a></li> -->
+<!-- <li><a href="profile.php?url=feedback" class="nav-link">Feed Back</a></li> -->
+<li><a href="dashboard.php?url=logout"class="nav-link">Logout</a></li>
           </ul>
         </li>
       

@@ -1,15 +1,15 @@
- table<?php
+<?php
 
 require  "../system/class.php";
 
-$u=getUsers('users');
+$u=getReview('feed_back');
  ?>
  <br>
-<table class="table table-responsive mt-20">
+<table class="table mt-20  table-responsive-md>
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Name</th>
+      <!-- <th scope="col">Name</th> -->
       <th scope="col">Email</th>
       <th scope="col">Phone</th>
         <th scope="col">Address</th>
@@ -26,16 +26,17 @@ foreach($u as $user){
         <?php echo $user['id'];?>
       </th>
       <td>
-        <?php echo $user['name'];?>
-      </td>
-      <td>
         <?php echo $user['email'];?>
       </td>
       <td>
-        <?php echo $user['phone'];?>
+        <?php echo $user['request'];?>
       </td>
       <td>
-        <?php echo $user['address'];?>
+        <?php echo $user['response'];?>
+      </td>
+      <td>
+       <a href="respond.php?id=<?php echo $user['id'];?>" class=" btn btn-primary">Respond</a>
+       
       </td>
      
     </tr>

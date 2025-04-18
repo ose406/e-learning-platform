@@ -1,8 +1,7 @@
 <?php 
-session_start();
-session_unset();
-session_destroy();
-//$db= new System();
+require"../system/class.php";
 
-header("location:index.html");
+$db= new System();
+
+$db->Logout("index.php");
 ?>
